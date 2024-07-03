@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import AppRoutes from "./routes/AppRoutes";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="flex flex-col min-h-screen bg-[#e5e7eb3d] shadow-md rounded-lg w-full xl:w-[75%] md:w-[75%] sm:w-[80%]">
+    <Router>
+      <Header />
+      <main className="flex-grow">
+        <AppRoutes />
+        <ToastContainer />
+      </main>
+      <Footer />
+    </Router>
+  </div>
+);
 
 export default App;
