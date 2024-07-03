@@ -10,6 +10,14 @@ FoodieDelight provides an easy-to-use interface for users to search for restaura
 
 - [Setup Instructions](docs/setup.md)
 - [Development Documentation](docs/development.md)
+- 
+## Time Breakdown
+
+- **Initial Setup:** 3 hours
+- **Component Development:** 10 hours
+- **API Integration:** 5 hours
+- **Testing:** 4 hours
+- **Documentation:** 2 hours
 
 ## Screenshots
 

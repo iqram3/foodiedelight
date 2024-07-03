@@ -10,15 +10,24 @@ This document outlines development guidelines and best practices for the FoodieD
 - **Naming Conventions**: Follow camelCase for variables and functions, PascalCase for components.
 - **Type Safety**: Utilize TypeScript for type definitions and interfaces.
 
-## Component Structure
 
-- **Folder Structure**: Organize components into `components` for UI and `containers` for logic-driven components.
-- **Separation of Concerns**: Maintain separation between business logic and presentation logic.
+## Code Structure
 
-## State Management
+- `src/`: Contains all the source code for the application.
+  - `components/`: Contains reusable React components.
+  - `pages/`: Contains page components that correspond to different routes.
+  - `utils/`: Contains utility functions and helpers.
+  - `hooks/`: Contains custom React hooks.
+  - `styles/`: Contains global styles and Tailwind CSS configuration.
 
-- **Local State**: Prefer `useState` and `useReducer` for managing local component state.
-- **Global State**: Integrate with Redux for managing global application state.
+## Development Tools
+
+- **React:** JavaScript library for building user interfaces.
+- **TypeScript:** Superset of JavaScript that adds static types.
+- **Axios:** HTTP client for making API requests.
+- **react-router-dom:** Library for routing in React applications.
+- **Tailwind CSS:** Utility-first CSS framework.
+- **Jest:** Testing framework for JavaScript and React applications.
 
 ## Styling Guidelines
 
@@ -35,11 +44,6 @@ This document outlines development guidelines and best practices for the FoodieD
 - **Unit and Integration Tests**: Write tests using Jest and React Testing Library.
 - **Mocking**: Mock API responses and components for reliable testing.
 
-## Deployment
-
-- **Environment Setup**: Configure deployment environments with environment variables.
-- **CI/CD Integration**: Automate deployments using GitHub Actions.
-
 ## Version Control
 
 - **Branching Model**: Use GitFlow (master, develop, feature branches) for version management.
@@ -48,14 +52,10 @@ This document outlines development guidelines and best practices for the FoodieD
 ## Security Considerations
 
 - **Input Validation**: Validate and sanitize user inputs to prevent security vulnerabilities.
-- **Data Handling**: Securely manage authentication tokens and sensitive information.
 
 ## Documentation Standards
-
-- **JSDoc Comments**: Document functions and complex logic using JSDoc format.
 - **README.md**: Maintain an up-to-date README.md with setup instructions and project overview.
 
 ## Contributing Guidelines
 
 - **Fork and Pull Model**: Encourage contributions via fork and pull requests.
-- **Code Reviews**: Conduct thorough code reviews for quality and knowledge sharing.
